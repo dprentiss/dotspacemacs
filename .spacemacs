@@ -318,7 +318,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
         org-gcal-client-secret "SifpeOK8paL0vVxil38HzS3U")
   (setq org-gcal-file-alist '(("uhponne5ppp2bop5f7pfthi1qs@group.calendar.google.com" . "~/cals/Work.org")))
   (setq org-agenda-files
-        (quote ("~/cals/work_cal.org")))
+        (quote ("~/cals/Work.org")))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
