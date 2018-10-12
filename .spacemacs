@@ -36,7 +36,6 @@ values."
      erc
      git
      github
-     google-calendar
      helm
      html
      ibuffer
@@ -44,6 +43,7 @@ values."
      (latex :variables
             latex-enable-folding t)
      org
+     python
      ranger
      (shell :variables
             shell-default-height 30
