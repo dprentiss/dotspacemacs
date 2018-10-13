@@ -180,7 +180,7 @@ values."
    dotspacemacs-default-layout-name "Default"
    ;; If non nil the default layout name is displayed in the mode-line.
    ;; (default nil)
-
+   dotspacemacs-display-default-layout nil
    ;; If non nil then the last auto saved layouts are resume automatically upon
    ;; start. (default nil)
    dotspacemacs-auto-resume-layouts nil
@@ -315,11 +315,6 @@ before packages are loaded. If you are unsure, you should try in setting them in
   (spacemacs/toggle-smartparens-globally-off)
   (add-hook 'dired-mode-hook 'deer)
   (setq powerline-default-separator nil)
-  (setq org-gcal-client-id "391885321443-l2dpoa2q9i79hjvs0srtshrkvb36rih2.apps.googleusercontent.com"
-        org-gcal-client-secret "SifpeOK8paL0vVxil38HzS3U")
-  (setq org-gcal-file-alist '(("uhponne5ppp2bop5f7pfthi1qs@group.calendar.google.com" . "~/cals/Work.org")))
-  (setq org-agenda-files
-        (quote ("~/cals/Work.org")))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
