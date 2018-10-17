@@ -53,6 +53,7 @@ values."
      spotify
      syntax-checking
      themes-megapack
+     theming
      version-control
      )
    ;; List of additional packages that will be installed without being
@@ -306,6 +307,13 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
+  (setq theming-modifications
+        '((monokai
+           (org-level-1 :height 1.0)
+           (org-level-2 :height 1.0)
+           (org-level-3 :height 1.0)
+           (org-level-4 :height 1.0)
+           (org-level-5 :height 1.0))))
   )
 
 (defun dotspacemacs/user-config ()
@@ -317,7 +325,8 @@ before packages are loaded. If you are unsure, you should try in setting them in
   (add-hook 'dired-mode-hook 'deer)
   (setq powerline-default-separator nil)
   (setq org-ref-default-bibliography '("~/research/bib/all.bib")
-        org-ref-bibliography-notes "~/research/bib/bibnotes.org")
+        org-ref-bibliography-notes "~/research/bib/bibnotes.org"
+        org-ref-pdf-directory "~/research/bib/pdf")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
