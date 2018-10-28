@@ -30,8 +30,9 @@ values."
    dotspacemacs-configuration-layer-path '()
    dotspacemacs-configuration-layers
    '(
-     csv
      auto-completion
+     colors
+     csv
      bibtex
      emacs-lisp
      erc
@@ -40,12 +41,14 @@ values."
      helm
      html
      ibuffer
+     ipython-notebook
      java
      (latex :variables
             latex-enable-folding t)
      org
      python
      ranger
+     rust
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
@@ -327,6 +330,11 @@ before packages are loaded. If you are unsure, you should try in setting them in
   (setq org-ref-default-bibliography '("~/research/bib/all.bib")
         org-ref-bibliography-notes "~/research/bib/bibnotes.org"
         org-ref-pdf-directory "~/research/bib/pdf")
+  (setq eclim-eclipse-dirs '("/snap/eclipse/current")
+        eclim-executable "~/.eclipse/360744347_linux_gtk_x86_64/plugins/org.eclim_2.8.0/bin/eclim")
+  (setq backup-by-copying-when-linked t)
+  (setq flycheck-python-pycompile-executable "python3")
+  (setq python-shell-interpreter "python3")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
